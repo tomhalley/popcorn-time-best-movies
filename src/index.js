@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+import { MuiThemeProvider } from '@material-ui/core';
 import { Provider } from 'react-redux';
 
 import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 import store from './common/store';
 import GlobalStyle from './components/GlobalStyle';
-
-const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true,
-  },
-});
+import theme from './common/theme';
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>

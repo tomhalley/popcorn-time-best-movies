@@ -19,7 +19,8 @@ if (process.env.NODE_ENV === 'development') {
 const AppStore = createStore(
   rootReducer, {
     filter: {
-      minimumRating: 0,
+      rating: 80,
+      genres: [],
     },
     ...API_DATA_CATEGORIES.reduce((object, dataCategory) => ({
       ...object,

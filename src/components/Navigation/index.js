@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import { API_DATA_CATEGORIES } from '../../common/consts';
 
 export default () => (
-  <AppBar position="static" color="default">
+  <AppBar position="fixed" color="default">
     <Toolbar>
       {API_DATA_CATEGORIES.map(category => (
         <Button key={`nav-link-${category}`} component={({ ...props }) => <Link to={`/${category}`} {...props} />}>
